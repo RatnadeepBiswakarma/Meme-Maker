@@ -1,0 +1,76 @@
+input[type=button], input[type=file] {
+	padding: 10px;
+	background-color: #6B62FF;
+	border: 1px solid #7C7EE3;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px #D8D8D8;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: 'Arial';
+	margin: 5px;
+}
+input[type=file] {
+	width: 96px;
+	cursor: pointer;
+}
+input[type=button]:hover {
+	background-color: #13BBCE;
+	cursor: pointer;
+	border: 1px solid #13BBCE;
+}
+input[type=text] {
+	background-color: white;
+	border: 1px solid #0037FF;
+	font-size: 18px;
+	padding: 10px;
+	font-family: 'Arial';
+	color: #2F38DE;
+}
+h2 {
+	font-family: 'Arial';
+	font-size: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	color: #3538FF;
+}
+span {
+	font-size: 20px;
+	margin: 5px;
+	font-weight: bold;
+	font-family: 'Arial';
+	color: #0037FF;
+	padding: 5px; 
+}
+#outputModal {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50px;
+	transform: translate(-210px);
+	width: 500px;
+	height: auto;
+	border: 1px solid #0037FF;
+	border-radius: 10px;
+	box-shadow: 10px 10px 20px grey;
+
+}
+.myCanvas {
+	padding: 15px;
+	border: 1px solid #8687FF;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 15px 15px 25px #D8D8DA;
+}
+canvas {
+	
+}
+@media screen and (min-width: 700px) {
+	.main {
+		margin-top: 20px;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	.main> div {
+		padding: 20px;
+	}
+}
