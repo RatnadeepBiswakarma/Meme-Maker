@@ -69,7 +69,6 @@ function handleFileSelect(evt) {
     };
     // Set image data to background image.
     image.src = data;
-    //console.log(fileObject.target.result);
   };
   reader.readAsDataURL(file);
 }
