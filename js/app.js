@@ -28,7 +28,6 @@ function redrawMeme(image, topLine, bottomLine) {
 }
 
 function saveFile() {
-  //window.open(document.querySelector('canvas').toDataURL());
   let canvas = document.querySelector("canvas");
   let img = canvas.toDataURL();
   document.querySelector(".main").style.display = "none";
@@ -55,8 +54,6 @@ function back() {
 }
 
 function handleFileSelect(evt) {
-  var canvasWidth = 500;
-  var canvasHeight = 500;
   var file = evt.target.files[0];
   var reader = new FileReader();
   reader.onload = function (fileObject) {
