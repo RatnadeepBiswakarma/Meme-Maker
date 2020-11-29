@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Meme Maker | by Ratnadeep</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meme Maker | by Ratnadeep</title>
 		<link rel="stylesheet" href="">
 		<link rel="stylesheet" href="css/app.css">
 	</head>
@@ -14,6 +15,9 @@
 			<input type="button" id="download" onclick="dnld()" value="Download It">
 		</div>
 		<div class="main">
+			<div class="myCanvas">
+				<canvas></canvas>
+			</div>
 			<div id="image-container">
 				<div id="input">
 					<div>
@@ -25,9 +29,6 @@
 					<input id="bottomLineText" maxlength="30" placeholder="Bottom Line Text" type="text"><br/>
 					<input type="button" id="saveBtn" value="Generate">
 				</div>
-			</div>
-			<div class="myCanvas">
-				<canvas width="500" height="500"></canvas>
 			</div>
 		</div>
 		
