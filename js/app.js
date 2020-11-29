@@ -1,3 +1,4 @@
+let canvas = document.querySelector("canvas");
 function textChangeListener(evt) {
   var id = evt.target.id;
   var text = evt.target.value;
@@ -28,7 +29,6 @@ function redrawMeme(image, topLine, bottomLine) {
 }
 
 function saveFile() {
-  let canvas = document.querySelector("canvas");
   let img = canvas.toDataURL();
   document.querySelector(".main").style.display = "none";
   document.querySelector("#outputModal").style.display = "block";
@@ -79,3 +79,13 @@ document
   .getElementById("file")
   .addEventListener("change", handleFileSelect, false);
 document.querySelector("#saveBtn").addEventListener("click", saveFile, false);
+
+window.onload = () => {
+  if (window.screen.availWidth > 500) {
+    canvas.setAttribute("width", 500);
+    canvas.setAttribute("height", 500);
+  } else {
+    canvas.setAttribute("width", 300);
+    canvas.setAttribute("height", 300);
+  }
+};

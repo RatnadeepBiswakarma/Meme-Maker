@@ -1,76 +1,93 @@
-input[type=button], input[type=file] {
-	padding: 10px;
-	background-color: #6B62FF;
-	border: 1px solid #7C7EE3;
-	border-radius: 5px;
-	box-shadow: 5px 5px 10px #D8D8D8;
-	color: #FFFFFF;
-	font-size: 16px;
-	font-family: 'Arial';
-	margin: 5px;
+.main {
+  max-width: 540px;
+  margin: auto;
 }
-input[type=file] {
-	width: 96px;
-	cursor: pointer;
+
+input[type="button"],
+input[type="file"] {
+  padding: 10px;
+  background-color: #6b62ff;
+  border: 1px solid #7c7ee3;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #d8d8d8;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Arial";
+  margin: 5px;
 }
-input[type=button]:hover {
-	background-color: #13BBCE;
-	cursor: pointer;
-	border: 1px solid #13BBCE;
+input[type="file"] {
+  width: 96px;
+  cursor: pointer;
 }
-input[type=text] {
-	background-color: white;
-	border: 1px solid #0037FF;
-	font-size: 18px;
-	padding: 10px;
-	font-family: 'Arial';
-	color: #2F38DE;
+input[type="button"]:hover {
+  background-color: #13bbce;
+  cursor: pointer;
+  border: 1px solid #13bbce;
+}
+input[type="text"] {
+  background-color: white;
+  border: 1px solid #0037ff;
+  font-size: 18px;
+  padding: 10px;
+  font-family: "Arial";
+  color: #2f38de;
 }
 h2 {
-	font-family: 'Arial';
-	font-size: 20px;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-	color: #3538FF;
+  font-family: "Arial";
+  font-size: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  color: #3538ff;
 }
 span {
-	font-size: 20px;
-	margin: 5px;
-	font-weight: bold;
-	font-family: 'Arial';
-	color: #0037FF;
-	padding: 5px; 
+  font-size: 20px;
+  margin: 5px;
+  font-weight: bold;
+  font-family: "Arial";
+  color: #0037ff;
+  padding: 5px;
 }
 #outputModal {
-	display: none;
-	position: absolute;
-	left: 50%;
-	top: 50px;
-	transform: translate(-210px);
-	width: 500px;
-	height: auto;
-	border: 1px solid #0037FF;
-	border-radius: 10px;
-	box-shadow: 10px 10px 20px grey;
-
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translate(-210px);
+  width: 500px;
+  height: auto;
+  border: 1px solid #0037ff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px grey;
 }
 .myCanvas {
-	padding: 15px;
-	border: 1px solid #8687FF;
-	background-color: white;
-	border-radius: 10px;
-	box-shadow: 15px 15px 25px #D8D8DA;
+  display: block;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid #8687ff;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 15px 15px 25px #d8d8da;
 }
-canvas {
-	
+
+.myCanvas canvas {
+  margin: auto;
+  display: block;
 }
-@media screen and (min-width: 700px) {
-	.main {
-		margin-top: 20px;
-		display: flex;
+
+#input {
+	text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    margin-top: 20px;
+    margin: auto;
+    display: flex;
 		flex-wrap: nowrap;
-	}
-	.main> div {
-		padding: 20px;
-	}
+		flex-direction: row-reverse;
+		
+  }
+  .main > div {
+    padding: 20px;
+  }
 }
